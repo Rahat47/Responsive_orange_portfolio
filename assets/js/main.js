@@ -43,3 +43,19 @@ function scrollActive() {
         }
     })
 }
+
+/*===== BACK TO TOP =====*/
+
+window.addEventListener("scroll", function () {
+    let scroll = document.querySelector(".backToTop")
+    scroll.classList.toggle("isVisible", window.scrollY > 500)
+})
+
+
+
+const btnScrollToTop = document.querySelector('.backToTop')
+
+btnScrollToTop.addEventListener('click', function() {
+    window.scrollTo(0, 0)
+})
+
